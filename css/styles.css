@@ -1,0 +1,329 @@
+/*desktop*/
+.body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  width: 1280px;
+  margin: 0 auto;
+}
+.head-content {
+  background: url("../img/lady.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 705px;
+  justify-content: center;
+  padding: 15px 174px;
+}
+.header__menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 10px;
+}
+.head-content__heading {
+  text-transform: capitalize;
+  white-space: pre-line;
+}
+.head-content__text {
+  white-space: pre-line;
+}
+.header__link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.icons-groups {
+  display: flex;
+  justify-content: space-between;
+}
+.header__icons {
+  width: 200px;
+  margin: 25px 0px;
+}
+.icons__icon {
+  color: #0078aa;
+}
+.menu {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.menu__logo {
+  height: 50px;
+}
+.header__links {
+  width: 50%;
+  padding: 0;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.about {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__image,
+.about__text {
+  width: 50%;
+}
+.about__image {
+  height: 500px;
+}
+.about__text {
+  padding: 70px 15% 70px 10px;
+}
+.about__heading {
+  text-transform: capitalize;
+}
+.about__subheading {
+  text-transform: uppercase;
+  color: #3fc8fc;
+  font-weight: 100;
+}
+.opportunities {
+  padding: 50px;
+  background-image: url("../img/services_bg.jpg");
+  text-align: center;
+}
+.opportunities__heading,
+.offers__heading {
+  margin: 10px;
+}
+.opportunities__subheading,
+.offers__subheading,
+.contact__subheading {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0;
+}
+.opportunities__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.opportunities__block {
+  width: 30%;
+  margin: 1%;
+  background-color: white;
+  text-align: left;
+  padding: 0.5%;
+}
+.offers {
+  padding: 50px 100px;
+  background-image: url("../img/pricing_bg.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  text-align: center;
+}
+.offers__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  flex-wrap: wrap;
+}
+.offers__block {
+  width: 30%;
+  text-align: center;
+  background-color: #47c9e5;
+  padding: 20px 10px;
+  height: 100%;
+}
+.offers__main-block {
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  padding: 40px 10px;
+  height: 100%;
+  border: 1px solid #0078aa;
+}
+.offers__main-name,
+.offers_main-price,
+.offers__main-treatments,
+.offers__main-text {
+  color: #0078aa;
+}
+.offers__name,
+.offers_price,
+.offers__treatments,
+.offers__text {
+  color: white;
+}
+.offers__treatments,
+.offers__main-treatments {
+  font-style: italic;
+}
+.offers_price,
+.offers_main-price {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 5px;
+}
+.offers__text_none::before {
+  content: "\2717";
+}
+.offers__button {
+  width: 110px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #0078aa;
+  color: #0078aa;
+  font-weight: bold;
+}
+.offers__button:hover {
+  cursor: pointer;
+  color: #47c9e5;
+  border-color: white;
+}
+.contact {
+  width: 100%;
+}
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+}
+.contact__image,
+.contact__form {
+  width: 48%;
+  padding: 0 1%;
+}
+.contact__image {
+  object-fit: cover;
+  height: 500px;
+  object-position: top left;
+}
+.contact__input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  height: 35px;
+}
+.contact__button {
+  border-radius: 10px;
+  width: 90px;
+  height: 43px;
+  background-color: #0078aa;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.contact__input::placeholder {
+  color: grey;
+  font-style: italic;
+}
+.contact__button,
+.contact__input {
+  margin: 5px;
+}
+.contact__button:hover {
+  cursor: pointer;
+  color: #0078aa;
+  background-color: white;
+  outline: 2px solid #0078aa;
+}
+.footer {
+  background-color: #363636;
+  color: #f5f5f5;
+  height: 55px;
+  vertical-align: middle;
+  display: table-cell;
+  width: inherit;
+  text-align: center;
+}
+.footer__text {
+  margin: 0;
+}
+/*tablet*/
+@media (max-width: 1280px) {
+  .body {
+    width: 768px;
+  }
+  .head-content {
+    padding: 15px;
+  }
+  .about__image {
+    height: 300px;
+  }
+  .about__text {
+    padding: 40px 10px 40px 10px;
+  }
+  .offers {
+    padding: 50px 10px;
+  }
+  /*mobile*/
+  @media (max-width: 768px) {
+    .body {
+      width: 450px;
+    }
+    .head-content {
+      height: 430px;
+      background-position-x: 40%;
+      text-align: center;
+    }
+    .icons-groups {
+      width: 60%;
+      margin: 25px auto;
+    }
+    .head-content__heading {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+    .header__links {
+      width: 100%;
+    }
+    .about {
+      flex-direction: column;
+    }
+    .about__image,
+    .about__text {
+      width: 90%;
+    }
+    .about__image {
+      height: 300px;
+    }
+    .about__text {
+      text-align: center;
+      padding: 10px;
+    }
+    .opportunities__block {
+      width: 100%;
+      margin: 3%;
+      background-color: white;
+      text-align: left;
+      padding: 3%;
+    }
+    .offers__block,
+    .offers__main-block {
+      width: 100%;
+    }
+    .contact__image,
+    .contact__form {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    .footer {
+      display: none;
+    }
+  }
+}
